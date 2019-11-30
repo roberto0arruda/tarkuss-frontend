@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Bitmap</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="25" cy="25" r="25"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-1195.000000, -20.000000)">
+            <g id="Bitmap" transform="translate(1195.000000, 20.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#D8D8D8" fill-rule="nonzero" xlink:href="#path-1"></use>
+                <circle id="Oval" fill="#B9B9B9" mask="url(#mask-2)" cx="25" cy="19.3548387" r="8.87096774"></circle>
+                <path d="M18.4516129,31.4516129 L33.1612903,31.4516129 C39.7887073,31.4516129 45.1612903,36.8241959 45.1612903,43.4516129 L45.1612903,53.2258065 L45.1612903,53.2258065 L6.4516129,53.2258065 L6.4516129,43.4516129 C6.4516129,36.8241959 11.8241959,31.4516129 18.4516129,31.4516129 Z" id="Rectangle" fill="#B9B9B9" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
