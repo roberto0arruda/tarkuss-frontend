@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -7,20 +6,23 @@
   box-sizing: border-box;
 }
 
-html,
-body,
-#root {
+html, body, #root {
   min-height: 100%;
 }
 
-body {
-  background: rgb(226, 234, 241);
-  -webkit-font-smoothing: antialiased !important;
+html, body {
+  background-color: rgb(226, 234, 241);
+  font-family: 'Nunito', sans-serif;
+  font-weight: 200;
+  height: 100vh;
+  margin: 0;
 }
 
-body,
-input,
-button {
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
-  font-size: 14px;
+#page-content {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+  background-color: #ffe300;
 }
