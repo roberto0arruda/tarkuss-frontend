@@ -12,7 +12,6 @@ export default function Home() {
     const [characters, setCharacters] = useState([]);
     const [count, setCount] = useState(0);
     const [pageCurrent, setPageCurrent] = useState(1);
-    // const user = JSON.parse(localStorage.getItem('user'));
 
     function handlePageChange(page) {
         setPageCurrent(page);
