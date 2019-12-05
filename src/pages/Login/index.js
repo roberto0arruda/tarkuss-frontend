@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Swal from 'sweetalert2'
 import api from '../../services/api';
+
+import { isAuthenticated } from '../../auth';
 
 import logo from '../../assets/LOGO.svg';
 import millenium from '../../assets/Millenium_falcon.png';
@@ -50,6 +52,12 @@ export default function Login({ history }) {
             history.push('/home');
         }
     }
+
+    useEffect(() => {
+        if (isAuthenticated()) {
+            history.push('/home');
+        }
+    }, [history])
 
     return (
         <div className="container-fluid amarelo">
