@@ -22,7 +22,7 @@ function NavBar() {
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item dropdown">
                         <a className="nav-link dropdown-toggle" href="##" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img src={userPlaceholder} width="30" height="30" className="d-inline-block align-right" alt="" />
+                            <img src={userPlaceholder} width="35" height="35" className="d-inline-block py-1" alt="" />
                             {user.username}
                         </a>
                         <div className="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
