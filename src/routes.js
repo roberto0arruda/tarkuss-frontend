@@ -4,6 +4,7 @@ import { isAuthenticated } from './auth';
 
 import Login from './pages/Login';
 import Home from './pages/Home';
+// import Character from './pages/Character';
 
 export default function Routes() {
     const PrivateRoute = ({ component: Component, ...rest }) => (
@@ -22,6 +23,7 @@ export default function Routes() {
             <Switch>
                 <Route path="/" exact component={Login} />
                 <PrivateRoute path="/home" component={Home} />
+                {/* <PrivateRoute path="/character/:id" component={Character} /> */}
             </Switch>
         </BrowserRouter>
     );

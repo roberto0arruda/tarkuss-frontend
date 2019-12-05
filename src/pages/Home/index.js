@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import Pagination from 'rc-pagination';
 import api from '../../services/api';
 import NavBar from '../../components/NavBar';
+import List from '../../components/List';
 import Footer from '../../components/Footer';
 
 import 'rc-pagination/assets/index.css';
@@ -27,6 +27,7 @@ export default function Home() {
     }
 
     useEffect(() => {
+        setCharacters([]);
         loadCharacters(pageCurrent);
     }, [pageCurrent]);
 
@@ -35,18 +36,8 @@ export default function Home() {
             <NavBar />
             <div id="page-content">
                 <h3 style={{ paddingLeft: '80px' }}>Characters</h3>
-                <div class="container text-center">
-                    <ul className="character-list">
-                        {characters.map((character, index) => (
-                            <Link to={{ pathname: `/character/${character.url.split('/')[character.url.split('/').length - 2]}` }} key={index}>
-                                <li>
-                                    <header style={{ backgroundImage: `url(${character.imageUrl})` }} />
-                                    <span>{character.name}</span>
-                                </li>
-                            </Link>
-                        ))}
-                    </ul>
-
+                <div className="container text-center character-label-group">
+                    <List characters={characters} />
                     <Pagination
                         className="ant-pagination"
                         onChange={handlePageChange}
